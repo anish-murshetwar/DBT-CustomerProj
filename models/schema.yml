@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: customers_raw
+    schema: staging
+    description: customers raw data
+
+    tables:
+      - name: customers
+      
+
+models:
+  - name: customers
+    description: this table contains Males top 50 income
+  - name: profess_income
+    description: this table contains every aggregated income by profession
+    config:
+      materialized: table
+
+models: # or seeds:
+  - name: customers
+    tests:
+    - dbt_expectations.expect_table_row_count_to_equal_other_table:
+          compare_model: ref("customers")
+         
