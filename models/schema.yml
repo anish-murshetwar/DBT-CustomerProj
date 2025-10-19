@@ -17,9 +17,17 @@ models:
     config:
       materialized: table
 
-models: # or seeds:
   - name: customers
-    tests:
-    - dbt_expectations.expect_table_row_count_to_equal_other_table:
-          compare_model: ref("customers")
-         
+    description: "The final customer dimension table."
+    columns:
+      # We define the simple tests directly on the column
+      - name: customer_id
+        description: "The unique identifier for the customer."
+        tests:
+          - unique
+          - not_null
+      
+      # Add your other columns here without any tests yet
+      - name: gender
+      - name: age
+      # ... other columns ...
