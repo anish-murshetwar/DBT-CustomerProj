@@ -1,6 +1,18 @@
 Welcome to your new dbt project!
 
 ### Using the starter project
+*Before starting, ensure you have the following installed:
+  - Dbt core,Dbt PostGres
+  - Python 3.8+
+  - Git
+  - PostgreSQL database (version 9.3 or higher)
+  - Power BI Desktop (for downstream reporting)
+  - A Python Virtual Environment (you are using dbt_venv)
+
+Clone the repository and navigate into the project directory:
+  <img width="774" height="356" alt="image" src="https://github.com/user-attachments/assets/3e774251-7f8d-44b6-8547-83887e82053f" />
+
+
 
 Try running the following commands:
 - dbt init
