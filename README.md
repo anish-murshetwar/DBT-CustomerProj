@@ -12,6 +12,28 @@ Before starting, ensure you have the following installed:
 All the Processes and connecting of DBT to PostGres are given in below link (For Reference)
   - https://youtu.be/ALuYdar1vCc?si=e_7x0rWIcV4iwwNP
 
+💾 Database Setup (PostgreSQL)
+
+To ensure this dbt project runs correctly, you must first create the necessary source tables using our provided schema dump.
+
+### 1. Create the Database
+
+Start by creating an empty database in your local PostgreSQL instance (e.g., named `dbt_source_db`).
+
+    psql -U your_admin_user -c "CREATE DATABASE dbt_source_db;
+
+
+### 2. Load the Schema
+
+ Use the provided schema-only dump file to create the table structures.
+      
+       Update 'your_user' and 'dbt_source_db' as needed
+    psql -U your_user -d dbt_source_db -f setup/schema_only.sql
+
+### 3. Refrence to  My Postgres Database
+
+  The below link provides you a overview of my database, What schemas I have used and how i have referenced my schemas to one another. 
+* **Click to View/Download:** **[DBT_Cusproj.sql](PostGresFile/DBT_Cusproj.sql)**
 
 AFTER INSTALLATION:-
 Try running the following commands:
@@ -21,7 +43,8 @@ Try running the following commands:
 4. dbt test- This command executes all tests defined in your schema.yml files or any other .yml files.
 5. dbt deps- It is necessary to download and install the packages defined in your packages.yml file
 6. dbt snapshot- This command executes your snapshots to capture historical changes in your source data.
-  
+
+
 
 
 ### Resources:
