@@ -41,11 +41,18 @@ Start by creating an empty database in your local PostgreSQL instance (e.g., nam
    
 This is Preview Images Describing the Reports
    
-  1.
+##1.
    <img width="1344" height="743" alt="Screenshot 2025-10-22 184417" src="https://github.com/user-attachments/assets/dcf9d295-f910-48ac-88fd-57dbc35941cb" />
   
-  2.
+ 
+##2.
    <img width="1324" height="732" alt="Screenshot 2025-10-22 184431" src="https://github.com/user-attachments/assets/62298c89-d34f-4671-85e9-8bc8e2a51ac9" />
+
+
+   If you want the source file so here it is 
+       **Click to View/Download:** **[DBT_CusProj.pbix](Power_Bi_DashBoard)**
+
+      
 
 
    
