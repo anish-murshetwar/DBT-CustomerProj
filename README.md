@@ -35,6 +35,10 @@ Start by creating an empty database in your local PostgreSQL instance (e.g., nam
   The below link provides you a overview of my database, What schemas I have used and how i have referenced my schemas to one another. 
 * **Click to View/Download:** **[DBT_Cusproj.sql](PostGresFile/DBT_Cusproj.sql)**
 
+### 4. PowerBi DashBoard
+  
+   This project integrates Between dbt,PostGres and Power BI. The repository houses the dbt models that structure the data as well as stored in Database and the final `.pbix` report, providing **dynamic visualization of [key metric, e.g., customer acquisition trends].**
+   
 AFTER INSTALLATION:-
 Try running the following commands:
 1. dbt init- To initilize the DBT.
