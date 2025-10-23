@@ -1,4 +1,4 @@
-Welcome to your new dbt project!
+Welcome to My New Dbt Project!
 
 ### This Project Mainly Focuses on How the Transformation of Data takes place in DBT tool,the dbt is connected to Postgres pulling data from it and do the neccesary transformation.
 ### From My Side I have created a DashBoard in Power Bi to understand the Transformation taken place at the database. (And PostGres is connected to PowerBi through Import Mode)
